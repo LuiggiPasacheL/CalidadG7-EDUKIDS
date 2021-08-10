@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas</title>
+
+</head>
+
+<body>
+    <style>
+        * {
+            transition: all 0.3s;
+        }
+
+        body {
+            background-image: url("/img/fondos/FondoAlternativo2.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-family: calibri;
+            font-size: 120%;
+        }
+
+        .Contenedor {
+            width: 98vw;
+            height: 97vh;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(121, 93, 93);
+        }
+
+        .Encabezado {
+            background: white;
+            min-width: 300px;
+            width: 70%;
+            max-width: 600px;
+            padding: 10px;
+        }
+
+        .Categoria {
+            opacity: 0.3;
+            text-align: left;
+        }
+
+        .Pregunta {
+            padding: 10px;
+        }
+
+        .Imagen {
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+        }
+
+        .btn {
+            background: white;
+            width: 60%;
+            max-width: 550px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: orange;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    </style>
+
+    <div class="Contenedor">
+
+        <div class="Encabezado">
+            <div class="Categoria" id="Categoria">
+                Categoria
+            </div>
+            <div class="Pregunta" id="Pregunta">
+                Pregunta
+            </div>
+            <img src="" class="Imagen" id="Imagen">
+        </div>
+        <form action="" method="get" id="formu">
+            <button class="btn" id="btn1" onclick="oprimir_btn(0)">Opcion 1</button>
+            <button class="btn" id="btn2" onclick="oprimir_btn(1)">Opcion 2</button>
+            <button class="btn" id="btn3" onclick="oprimir_btn(2)">Opcion 3</button>
+            <button class="btn" id="btn4" onclick="oprimir_btn(3)">Opcion 4</button>
+        </form>
+ 
+    </div>
+
+    <script>
+
+        let base_preguntas = readText("/json/base-preguntas.json")
+        let interprete_bp = JSON.parse(base_preguntas)
+        let pregunta
+        let posibles_respuestas
+        let btn_correspondiente = [
+            select_id("btn1"),
+            select_id("btn2"),
+            select_id("btn3"),
+            select_id("btn4")
+        ]
+
+        escogerPreguntaAleatoria();
+
+        function escogerPreguntaAleatoria() {
+            escogerPregunta(Math.floor(Math.random() * interprete_bp.length));
+        }
+
+
+        function escogerPregunta(n) {
+
+            pregunta = interprete_bp[n]
+            select_id("Categoria").innerHTML = pregunta.Categoria
+            select_id("Pregunta").innerHTML = pregunta.Pregunta
+            style("Imagen").objectFit = pregunta.objectFit;
+            desordenarRespuestas(pregunta)
+
+            if (pregunta.Imagen) {
+                select_id("Imagen").setAttribute("src", pregunta.Imagen)
+                style("Imagen").height = "200px"
+                style("Imagen").width = "100%"
+            }
+            else {
+                style("Imagen").height = "0px"
+                style("Imagen").width = "0px"
+            }
+        }
+
+        let btns = [
+            select_id("btn1"),
+            select_id("btn2"),
+            select_id("btn3"),
+            select_id("btn4")
+        ]
+
+        function desordenarRespuestas(pregunta) {
+            posibles_respuestas = [
+                pregunta.Respuesta,
+                pregunta.Incorrecto1,
+                pregunta.Incorrecto2,
+                pregunta.Incorrecto3
+            ]
+            posibles_respuestas.sort(() => Math.random() - 0.5)
+            select_id("btn1").innerHTML = posibles_respuestas[0]
+            select_id("btn2").innerHTML = posibles_respuestas[1]
+            select_id("btn3").innerHTML = posibles_respuestas[2]
+            select_id("btn4").innerHTML = posibles_respuestas[3]
+        }
+
+        function oprimir_btn(i) {
+            if (posibles_respuestas[i] == pregunta.Respuesta) {
+                btn_correspondiente[i].style.background = "green"
+                let formulario = document.getElementById("formu");
+                formulario.method = "post";
+                formulario.action = "/juegos/correcto";
+            }
+            else {
+                btn_correspondiente[i].style.background = "red"
+            }
+            setTimeout(() => {
+
+                reiniciar();
+            }, 300);
+
+        }
+
+        function reiniciar() {
+            for (const btn of btn_correspondiente) {
+                btn.style.background = "white"
+            }
+            escogerPreguntaAleatoria()
+        }
+
+        function select_id(id) {
+            return document.getElementById(id)
+        }
+
+        function style(id) {
+            return select_id(id).style
+        }
+
+        function readText(ruta_local) {
+            var texto = null;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", ruta_local, false);
+            xmlhttp.send();
+            if (xmlhttp.status == 200) {
+                texto = xmlhttp.responseText;
+            }
+            return texto;
+        }
+    </script>
+
+</body>
+
+</html>

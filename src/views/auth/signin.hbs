@@ -1,0 +1,62 @@
+<div class="container p-4">
+    {{!<img src="/img/fondo.jpg" alt="Fondo" class="card-img-top mx-auto">}}
+    <div class="row"> {{!- fila para dividir el contenido}}
+        <div class="col-md-4" style="width: 70px;">
+            <img src="/img/fondos/como_iniciar.png" alt="Como iniciar">
+        </div>
+       <div class="col-md-4 offset-6" style="margin-top: 70px;">{{!- columna de 4 tamaño medio y centrada}}
+          <div class="card text-center">{{!- tarjeta}}
+              <div class="card-header" >{{!- título de la tarjeta}}
+                 <h3 style="color: #FFFFFF;
+                            font-family: Martel Sans;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 36px;
+                            line-height: 66px;
+                            text-align: center;">
+                    Iniciar sesión</h3>
+              </div>
+              <div class="card-body">
+                  <form action="/signin" method="POST">
+                  <div class="formgroup">
+                      <input type="text" name="username" placeholder="Usuario" class="form-control" style="text-align: center;
+                        font-family: Sulphur Point;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 36px;" >
+                  </div>
+                  <div class="form-group">
+                      <input type="password" name="password" placeholder="Contraseña" class="form-control" style="text-align: center;
+                        font-family: Sulphur Point;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 36px;
+                        margin: 25px;
+                        margin-left: 0px;" >
+                  </div>
+                  <div class="form-group">
+                      <button class= "btn btn-success btn-block" style="font-family: Martel Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 66px;
+                        text-align: center;
+                        color: #FFFFFF;">
+                             Ingresar
+                      </button>
+                  </div>
+                  </form>
+              </div>
+          </div>
+       </div>
+    </div>
+</div>
+<style>
+    body{
+        background-image: url("/img/fondos/FondoAlternativo2.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+</style>

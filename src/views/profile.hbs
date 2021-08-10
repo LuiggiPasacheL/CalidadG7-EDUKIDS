@@ -1,0 +1,128 @@
+<section class="text-light" style="background-image: url(/img/fondos/FondoAlternativo2.jpg);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-2">
+
+                        <img src={{user.img}} alt="nivel2_2">
+
+                    </div>
+
+                    <div class="col-3" style="margin-top: 70px;">
+                        <div class="card text-center profile" style="background-color: #FFFFFF;">
+                            <h4 style="color:#000000">Bienvenido {{user.username}}:</h4>
+                            <p style="color: #000000;">Aquí puedes visualizar tus datos y cambiarlos si alguno es incorrecto, gracias por tu atención y diviértete :)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid perfil col-8 justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card my-5 perfil" style="border: none;">
+                        <h3 class="text-center mb-4">PERFIL DE USUARIO</h3>
+
+                        <div class="form-row align-items-center justify-content-around"></div>
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4 form-group mb-4">
+                                <label for="name" style="font-size: 22px;">Nombre de usuario:</label>
+                                <div class="card" style="background-color: #474747; border-radius:20px;">
+                                    <h4 class="offset-1" style="color:#ffffff">{{user.username}}</h4>
+                                </div>
+                            </div>
+
+                            <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                                <label for="name" style="font-size: 22px;">Nombres:</label>
+                                <div class="card" style="background-color: #474747; border-radius:20px;">
+                                    <h4 class="offset-1" style="color:#ffffff">{{user.name}}</h4>
+                                </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4 form-group mb-4">
+                                <label for="name" style="font-size: 22px;">Apellidos:</label>
+                                <div class="card" style="background-color: #474747; border-radius:20px;">
+                                    <h4 class="offset-1" style="color:#ffffff">{{user.surname}}</h4>
+                                </div>
+                            </div>
+
+                            <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                                <label for="name" style="font-size: 22px;">Nivel:</label>
+                                <div class="card" style="background-color: #474747; border-radius:20px;">
+                                    <h4 class="offset-1" style="color:#ffffff">{{user.lvl}}</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4 form-group mb-4">
+                                <label for="name" style="font-size: 22px;">Correo Electrónico:</label>
+                                <div class="card" style="background-color: #474747; border-radius:20px;">
+                                    <h4 class="offset-1" style="color:#ffffff">{{user.email}}</h4>
+                                </div>
+                            </div>
+
+                            <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                                <label for="name" style="font-size: 22px;">Contraseña:</label>
+                                <div class="card" style="background-color: #474747; border-radius:20px;">
+                                    <h4 class="offset-1" style="color:#ffffff">{{user.password}}</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-9 text-center mt-1" style="background-color: #6b6a6a; border-radius:40px;">
+                                <a href="/edit-profile">
+                                    <button type="submit" id="cambiarDatos" class="btn mb-1 col-md-5 col-7 py-2">CAMBIAR
+                                        DATOS</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid col-8 justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="card my-5" style="background-color: #8cc5cc; border:none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="text-light">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row text-center py-4 align-items-center">
+                <div class="col-12 col-md-6 py-3">
+                    <h2>contáctenos</h2>
+                    <p class="ml-5">Telf: 921301340</p>
+                    <p class="ml-5">Telf: 943285921</p>
+                    <p class="ml-5">Correos:</p>
+                    <p class="ml-5">diego.montalvo@unmsm.edu.pe</p>
+                    <p class="ml-5">luiggi.pasache@unmsm.edu.pe</p>
+                </div>
+                <div class="col-12 col-md-6 py-3">
+                    <img src="img/footer-logo.png" alt="EDUKIDS" width="35%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contaier-fluid border-top border-1 border-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-3">
+                    <p class="m-0">UNMSM - EduKIDS, Derechos eservados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

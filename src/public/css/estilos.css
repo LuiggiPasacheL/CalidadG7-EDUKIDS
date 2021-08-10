@@ -1,0 +1,10 @@
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 1000;
+    forced-color-adjust: hsl(350, 100%, 88%);
+    color:chocolate;
+}
+
+body{
+    background-image: url("/img/fondos/FondoAlternativo2.jpg");
+}

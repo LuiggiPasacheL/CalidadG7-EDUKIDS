@@ -1,0 +1,156 @@
+<section class="text-light" style="background-image: url(/img/fondos/FondoAlternativo2.jpg);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-2">
+
+                        <img src={{user.img}} alt="nivel2_2">
+
+                    </div>
+
+                    <div class="col-3" style="margin-top: 70px;">
+                        <div class="card text-center profile" style="background-color: #FFFFFF;">
+                            <h4 style="color:#000000">Bienvenido {{user.username}}:</h4>
+                            <p style="color: #000000;">¿Son incorrectos tus datos? ¿Necesitas cambiarlos? ¡Adelante! Aquí puedes modificarlos a gusto las veces que sean necesarias, pero ten mucho cuidado con tu contraseña :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid perfil col-8 justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card my-5 perfil" style="border: none;">
+                        <h3 class="text-center mb-4">PERFIL DE USUARIO</h3>
+                        <div class="form-row align-items-center justify-content-around"></div>
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4 form-group mb-4">
+                                <label for="name">Nombre de usuario:</label>
+                                <input type="text" class="form-control py-2" id="last_one_name"
+                                    value={{user.username}}>
+                            </div>
+
+                            <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                                <label for="last_one_name">Nombres:</label>
+                                <input type="text" class="form-control py-2" id="last_one_name" value={{user.name}}>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4 form-group mb-4">
+                                <label for="last_two_name">Apellidos:</label>
+                                <input type="text" class="form-control py-2" id="last_two_name" value={{user.surname}}>
+                            </div>
+
+                            <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                                <label for="user">Nivel:</label>
+                                <input type="text" class="form-control py-2" id="lvl" value={{user.lvl}}>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-4 form-group mb-4">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" class="form-control py-2" id="email" value={{user.email}}>
+                            </div>
+
+                            <div class="offset-md-1 col-10 col-md-4 form-group mb-4">
+                                <label for="password">Contraseña:</label>
+                                <input type="password" class="form-control py-2" id="password" value={{user.password}}>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-9 text-center mt-1" style="background-color: #6b6a6a; border-radius:40px;">
+                                <button type="submit" id="cambiarDatos" class="btn mb-1 col-md-5 col-7 py-2">GUARDAR CAMBIOS</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid col-8 justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="card my-5" style="background-color: #8cc5cc; border:none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="text-light">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row text-center py-4 align-items-center">
+                <div class="col-12 col-md-6 py-3">
+                    <h2>contáctenos</h2>
+                    <p class="ml-5">Telf: 921301340</p>
+                    <p class="ml-5">Telf: 943285921</p>
+                    <p class="ml-5">Correos:</p>
+                    <p class="ml-5">diego.montalvo@unmsm.edu.pe</p>
+                    <p class="ml-5">luiggi.pasache@unmsm.edu.pe</p>
+                </div>
+                <div class="col-12 col-md-6 py-3">
+                    <img src="img/footer-logo.png" alt="EDUKIDS" width="35%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contaier-fluid border-top border-1 border-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-3">
+                    <p class="m-0">UNMSM - EduKIDS, Derechos eservados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const button = document.getElementById('cambiarDatos');
+    const passwordOld = document.getElementById('password').value;
+
+    button.addEventListener('click', async _ => {
+        let headersList = {
+            "Accept": "*/*",
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+
+        const id = {{ user.id }};
+        const username = '{{user.username}}';
+        const user = {
+            'id': id,
+            'username': username,
+            'name': document.getElementById('last_one_name').value,
+            'surname': document.getElementById('last_two_name').value,
+            'lvl': document.getElementById('lvl').value,
+            'email': document.getElementById('email').value,
+            'password': document.getElementById('password').value,
+        };
+
+        fetch("/edit-profile", {
+            method: "POST",
+            body:
+                "&id=" + user.id +
+                "&username=" + user.username +
+                "&name=" + user.name +
+                "&surname=" + user.surname +
+                "&lvl=" + user.lvl +
+                "&email=" + user.email +
+                "&password=" + user.password+
+                "&passwordOld="+passwordOld,
+            headers: headersList
+        }).then(function (response) {
+            return response.text();
+        }).then(function (data) {
+            console.log(data);
+        })
+    })
+</script>

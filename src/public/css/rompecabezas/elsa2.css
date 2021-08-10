@@ -1,0 +1,21 @@
+/*Hoja de estilos*/
+
+body{
+	background-image: url("/img/fondos/FondoAlternativo2.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-family: calibri;
+	font-size: 120%;
+}
+
+#entorno {
+	display: block;
+	margin: 0 auto;
+}
+
+#fondo {
+	opacity: 0.3;
+}

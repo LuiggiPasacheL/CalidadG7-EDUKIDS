@@ -1,0 +1,240 @@
+{{#if user}}
+<!--index original-->
+<main class="text-light">
+        <div class="container-fluid">
+                <div class="container">
+                        <div class="row align-items-center text-center" style="min-height: 100vh;">
+                                <div class="col-12 col-md-4">
+                                        <img src="/img/footer-logo.png" alt="Maestra Enseñando" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                        <h1 class="pb-3"
+                                                style="position: relative; width: 794px;
+                                                                                        height: 214px;
+                                                                                        font-family: Ropa Sans;
+                                                                                        font-style: normal;
+                                                                                        font-weight: normal;
+                                                                                        font-size: 100px;
+                                                                                        line-height: 100px;
+                                                                                        text-align: center;
+                                                                                        color: #000000;
+                                                                                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                                Aprende jugando con EduKIDS
+                                        </h1>
+                                        <div class="card" style="width: 18rem; margin: auto auto;">
+                                                <div class="card-body"
+                                                        style="position: relative; width: 290px; height: 198px;
+                                                        font-family: Martel Sans; font-style: normal; font-weight: 900; font-size: 36px; line-height: 58px; text-align: center; color: #FFFFFF;">
+                                                        <p>Enfocados en el aprendizaje de los niños</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="container-fluid">
+                <div class="container">
+                        <div class="row align-items-center text-center" style="
+                                                min-height: 100vh; 
+                                                font-family: Ropa Sans;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                line-height: 90px;
+                                                text-align: center;
+                                                color: #FFFFFF;
+                                                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                <div class="col-12">
+                                        <h1 style="color: #1c1c1c;">ACTIVIDADES DISPONIBLES</h1>
+                                </div>
+                                <div class="row">
+                                        <div class="col-12 col-md-3" id="preguntas">
+                                                <a href="videos/partes_cuerpo">
+                                                        <img src="img/Jugando con la cultura/Index-Jugando_cultura.png"
+                                                                alt="preguntas">
+                                                        <div class="videos_fondo">
+                                                                <img src="img/fondos/boton_actividad.png"
+                                                                        alt="preguntas">
+                                                                <p class="videos_texto">VIDEOS</p>
+                                                        </div>
+                                                </a>
+                                        </div>
+                                        <div class="col-12 col-md-3" id="jugando_cultura">
+                                                <a href="juegos/preguntas/instrucciones">
+                                                        <img src="img/preguntas/Index-preguntas.png"
+                                                                alt="Jugando_cultura">
+                                                        <div class="videos_fondo">
+                                                                <img src="img/fondos/boton_actividad.png"
+                                                                        alt="Jugando_cultura">
+                                                                <p class="cultura_texto"
+                                                                        style="margin: 0px 0px 0px 0px;">JUGANDO CON LA
+                                                                        CULTURA</p>
+                                                        </div>
+                                                </a>
+                                        </div>
+                                        <div class="col-12 col-md-3" id="rompecabezas">
+                                                <a href="/juegos/rompecabezas/instrucciones">
+                                                        <img src="img/rompecabezas/Index-rompecabezas.png"
+                                                                alt="rompecabezas">
+                                                        <div class="videos_fondo">
+                                                                <img src="img/fondos/boton_actividad.png"
+                                                                        alt="rompecabezas">
+                                                                <p class="rompecabezas_texto">ROMPECABEZAS</p>
+                                                        </div>
+                                                </a>
+                                        </div>
+                                </div>
+
+                                <div class="row">
+                                        <div class="col-12 col-md-5" id="barra_medicion">
+                                                <div>
+                                                        <p class="nombre_usuario"
+                                                                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                                                                [ {{user.username}} ]</p>
+                                                </div>
+                                                <head>
+                                                        <meta charset="UTF-8">
+                                                                <title>Scroll ProgressBar</title>
+                                                        <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maxinum-scale=1.0, minimum-scale=1.0">
+                                                        <style>
+                                                                .container-progressbar{
+                                                                background: #1a1a1a;
+                                                                height: 80px;
+                                                                width: 100px;
+                                                                position:fixed;
+                                                                top:0;  
+                                                                }
+                                                                .progressbar{
+                                                                width:100px;
+                                                                height: 80px;
+                                                                left: 50px;
+                                                                background: #00ff15;
+                                                                border-radius: 20px;
+                                                                }
+                                                        </style>
+                                                </head>
+                                                <body>
+                                                        <div class="container-progessbar">
+                                                                <div class="progressbar"></div>
+                                                        </div>
+                                                        <script>
+                                                                let progressbar = document.querySelector('.progressbar');
+                                                                progressbar.style.width = {{user.exp}} + '%'; //Aqui puedes poner el nivel de la barra, del 1 al 100
+                                                        </script>
+                                                </body>
+                                                <div class="barra_base">
+                                                        <img src="img/fondos/boton_actividad.png" alt="preguntas">
+                                                        <p class="barra_texto">PROGRESO</p>
+                                                </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-5" id="fondo_picchu">
+                                                <img src={{user.img}} alt="Jugando_cultura" style="margin-top: 40px;">
+                                                <div class="videos_fondo">
+                                                        <img src="img/fondos/rectangulo_picchu.png" alt="preguntas">
+                                                        <p class="picchu_texto">Nivel: {{user.lvl}}</p>
+                                                        <a href="http://localhost:4000/avatar">
+                                                                <button type="button" class="btn btn-danger"
+                                                                        id="cambiar_avatar"
+                                                                        style="font-size: 20px;">CAMBIAR AVATAR</button>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+
+        <div class="container-fluid">
+                <div class="container">
+                        <div style="min-height: 35vh;
+                                                font-family: Ropa Sans;
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                text-align: center;
+                                                color: #FFFFFF;
+                                                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                <div class="col-12">
+                                        <!--<h2 style="margin-top: 40px; color:black">
+                                                <u>CALIFÍQUENOS</u>
+                                        </h2>-->
+                                </div>
+
+                                <div class="row">
+                                        <form class="was-validated">
+                                                <div>
+                                                        <label for="validationTextarea" style="font-size: 30px; color:#000000"> <u> Envíanos un mensaje</u></label>
+                                                        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Dinos tu opinión para mejorar :)" required style="resize: none;"></textarea>
+                                                        <button type="button" class="btn btn-primary" id="btn-sending" style="margin-bottom: 20px; background:#1a1a1a; border:none;">Enviar</button>
+                                                        <div class="invalid-feedback">.</div>
+                                                </div>
+                                        </form>
+                                        <!--<div class="col-12 col-md-6 offset-3" id="preguntas" style="margin-top: 35px;">
+                                                <img src="img/fondos/estrella_calif.png" alt="preguntas">
+                                                <img src="img/fondos/estrella_calif.png" alt="preguntas">
+                                                <img src="img/fondos/estrella_calif.png" alt="preguntas">
+                                                <img src="img/fondos/estrella_calif.png" alt="preguntas">
+                                                <img src="img/fondos/estrella_calif.png" alt="preguntas">
+                                        </div>-->
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+</main>
+
+<footer class="text-light">
+        <div class="container-fluid">
+                <div class="container">
+                        <div class="row text-center py-2 align-items-center">
+                                <div class="col-12 col-md-6 py-3">
+                                        <h2>contáctenos</h2>
+                                        <p class="ml-5">Telf: 921301340</p>
+                                        <p class="ml-5">Telf: 943285921</p>
+                                        <p class="ml-5">Correos:</p>
+                                        <p class="ml-5">diego.montalvo@unmsm.edu.pe</p>
+                                        <p class="ml-5">luiggi.pasache@unmsm.edu.pe</p>
+                                </div>
+                                <div class="col-12 col-md-6 py-3">
+                                        <img src="img/footer-logo.png" alt="EDUKIDS" width="35%">
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="contaier-fluid border-top border-1 border-white">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-12 text-center py-3">
+                                        <p class="m-0">UNMSM - EduKIDS, Derechos eservados</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</footer>
+{{else}}
+<!--aparece cuando el usuario es nuevo y no esta registrado-->
+<!--desde aca empieza el Index_pre_registro-->
+<main class="text-light">
+        <div class="container-fluid">
+                <div class="container">
+                        <div class="row align-items-center text-center" style="min-height: 100vh;">
+                                <div class="col-12 col-md-4">
+                                        <img src="/img/footer-logo.png" alt="Maestra Enseñando" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                        <h1 class="pb-3"
+                                                style="position: relative; width: 794px; height: 214px; font-family: Ropa Sans;
+                                                font-style: normal; font-weight: normal; font-size: 100px; line-height: 107px; text-align: center; color: #000000; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                                Aprende jugando con EduKIDS
+                                        </h1>
+                                        <div class="card" style="width: 18rem; margin: auto auto;">
+                                                <button type="button" onclick="location.href='/signup'"
+                                                        class="btn btn-danger" id="inicio_registro"
+                                                        style="font-size: 20px;">Registrarse</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+</main>
+{{/if}}

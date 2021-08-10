@@ -1,0 +1,152 @@
+body {
+    background: #f5f6f5;
+    font-family: 'Oswald', sans-serif;
+}
+
+main{
+    background-image: url("/img/fondos/FondoAlternativo2.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.card{
+    background-color: black;
+}
+
+.profile{
+    background-color: #3b3b3b;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    border: none;
+}
+
+.perfil{
+    background-color: #3b3b3b;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+}
+
+.perfil.row{
+    min-height: 100vh;
+}
+
+.perfil.row.card{
+    margin: 0 auto;
+    padding: 1rem 1rem 5rem 1rem;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.perfil.row.card.form.label{
+    font-weight: 600;
+}
+
+.perfil.row.card.form.label.input{
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+footer{
+    background-color: black;
+}
+
+footer h2{
+    text-transform: uppercase;
+}
+
+#jugando_cultura{
+    margin-right: 70px;
+}
+
+#preguntas{
+    margin-right: 70px;
+}
+
+.videos_fondo{
+    position: relative;
+    text-align: center;
+}
+
+.videos_texto{
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    font-size: 25px;
+    color: #FFFF;
+}
+
+.cultura_texto{
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    font-size: 25px;
+    line-height: normal;
+    color: white;
+}
+
+.rompecabezas_texto{
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    font-size: 25px;
+    color: white;
+}
+
+.nombre_usuario{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    font-size: 30px;
+    color: black;
+    margin: 50px 0px 0px 0px;
+}
+
+.barra_texto{
+    position: absolute;
+    top: 0%;
+    left: 32%;
+    font-size: 30px;
+    color: #FFFF;
+    margin: 0px 0px 0px 0px;
+}
+
+#barra_medicion{
+    margin: 100px 0px 0px 0px;
+}
+
+.barra_base{
+    position: relative;
+    margin: 0px 0px 0px 0px;
+}
+
+#fondo_picchu{
+    margin: 100px 0px 0px 0px;
+}
+
+.picchu_texto{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    font-size: 30px;
+    color: #FFFF;
+}
+
+#cambiar_avatar{
+    padding: 20px 120px 20px 120px;
+    border-radius: 20px;
+}
+
+#btn-sending{
+    float: right;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #1d3557;
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
+}
+
+#validationTextarea{
+    height: 150px;
+}

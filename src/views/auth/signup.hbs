@@ -1,0 +1,88 @@
+<div class="container p-4">
+    <div class="row"> {{!- fila para dividir el contenido}}
+        <div class="col-md-4" style="width: 70px;">
+            <img src="/img/fondos/como_registrarse.png" alt="Como registrarse" style="margin-top: 70px;">
+        </div>
+       <div class="col-md-4 offset-6">{{!- columna de 4 tamaño medio y centrada}}
+          <div class="card text-center">{{!- tarjeta}}
+              <div class="card-header">{{!- título de la tarjeta}}
+                 <h3 style="color: #FFFFFF;
+                            font-family: Martel Sans;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 36px;
+                            line-height: 40px;
+                            text-align: center;">Formulario de registro</h3>
+              </div>
+              <div class="card-body">
+                  <form action="/signup" method="POST">
+                  <div class="form-group">
+                      <input type="text" name="fullname" placeholder="Nombres" class="form-control" style="text-align: center;
+                        font-family: Sulphur Point;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 36px;" autofocus>                 
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="fullname2" placeholder="Apellidos" class="form-control" style="text-align: center;
+                        font-family: Sulphur Point;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 36px;
+                        margin: 25px;
+                        margin-left: 0px;" autofocus>                 
+                  </div>
+                  <div class="form-group">
+                      <input type="email" name="email" placeholder="Correo" class="form-control" style="text-align: center;
+                        font-family: Sulphur Point;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 36px;" autofocus>                 
+                  </div>
+                  <div class="formgroup">
+                      <input type="text" name="username" placeholder="Usuario" class="form-control" style="text-align: center;
+                        font-family: Sulphur Point;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 36px;
+                        margin: 25px;
+                        margin-left: 0px;" >
+                  </div>
+                  <div class="form-group">
+                      <input type="password" name="password" placeholder="Contraseña" class="form-control" style="text-align: center;
+                        font-family: Sulphur Point;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 36px;
+                        line-height: 36px;">
+                  </div>
+                  <div class="form-group">
+                      <button class= "btn btn-success btn-block" style="font-family: Martel Sans;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 66px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        margin: 25px;
+                        margin-left: 28px;">
+                             Registrarse
+                      </button>
+                  </div>
+                  </form>
+              </div>
+          </div>
+       </div>
+    </div>
+</div>
+<style>
+    body{
+        background-image: url("/img/fondos/FondoAlternativo2.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+</style>

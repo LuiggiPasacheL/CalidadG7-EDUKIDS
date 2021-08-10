@@ -1,0 +1,243 @@
+[
+    {
+        "Categoria": "Preguntas y Respuestas",
+        "Pregunta": "¿De que color es el sol?",
+        "Respuesta": "Amarillo",
+        "Incorrecto1": "Rojo",
+        "Incorrecto2": "Verde",
+        "Incorrecto3": "Negro",
+        "Imagen": "../../img/preguntas/sol.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿En que planeta vivimos?",
+        "Respuesta": "Tierra",
+        "Incorrecto1": "Marte",
+        "Incorrecto2": "Venus",
+        "Incorrecto3": "Saturno",
+        "Imagen": "../../img/preguntas/tierra.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuántos minutos hay en una hora?",
+        "Respuesta": "60 minutos",
+        "Incorrecto1": "70 minutos",
+        "Incorrecto2": "50 minutos",
+        "Incorrecto3": "80 minutos",
+        "Imagen": "../../img/preguntas/hora.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuántas patas tiene una araña?",
+        "Respuesta": "8 patas",
+        "Incorrecto1": "6 patas",
+        "Incorrecto2": "7 patas",
+        "Incorrecto3": "9 patas",
+        "Imagen": "../../img/preguntas/araña.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuál es el planeta más cercano al sol?",
+        "Respuesta": "Mercurio",
+        "Incorrecto1": "Marte",
+        "Incorrecto2": "Venus",
+        "Incorrecto3": "Tierra",
+        "Imagen": "../../img/preguntas/sistema.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuál es la montaña más alta?",
+        "Respuesta": "Everest",
+        "Incorrecto1": "Huascarán",
+        "Incorrecto2": "Makalu",
+        "Incorrecto3": "Manaslu",
+        "Imagen": "../../img/preguntas/everest.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿En qué departamento se encuentra Macchu Picchu?",
+        "Respuesta": "Cuzco",
+        "Incorrecto1": "Pucallpa",
+        "Incorrecto2": "Lima",
+        "Incorrecto3": "Ayacucho",
+        "Imagen": "../../img/preguntas/machu.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuántos años conforman un siglo?",
+        "Respuesta": "100 años",
+        "Incorrecto1": "50 años",
+        "Incorrecto2": "500 años",
+        "Incorrecto3": "10 años",
+        "Imagen": "../../img/preguntas/siglo.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuántos años conforman una década?",
+        "Respuesta": "10 años",
+        "Incorrecto1": "20 años",
+        "Incorrecto2": "50 años",
+        "Incorrecto3": "100 años",
+        "Imagen": "../../img/preguntas/decada.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿A qué temperatura se congela el agua?",
+        "Respuesta": "0 °C",
+        "Incorrecto1": "100 °C",
+        "Incorrecto2": "50 °C",
+        "Incorrecto3": "5 °C",
+        "Imagen": "../../img/preguntas/agua.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Qué tipo de instrumento es un piano?",
+        "Respuesta": "Percusión",
+        "Incorrecto1": "Acústico",
+        "Incorrecto2": "Viento",
+        "Incorrecto3": "Teclas",
+        "Imagen": "../../img/preguntas/piano.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Qué figura es esta?",
+        "Respuesta": "triángulo",
+        "Incorrecto1": "cuadrado",
+        "Incorrecto2": "rectángulo",
+        "Incorrecto3": "rombo",
+        "Imagen": "../../img/preguntas/triangulo.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuántos kilos son una tonelada?",
+        "Respuesta": "1000 kilos",
+        "Incorrecto1": "10 kilos",
+        "Incorrecto2": "100 kilos",
+        "Incorrecto3": "10000 kilos",
+        "Imagen": "../../img/preguntas/tonelada.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Que color no se encuentra en el arcoiris?",
+        "Respuesta": "Negro",
+        "Incorrecto1": "Verde",
+        "Incorrecto2": "Azul",
+        "Incorrecto3": "Rojo",
+        "Imagen": "../../img/preguntas/arcoiris.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿En cuál departamento se encuentra las líneas de Nazca?",
+        "Respuesta": "Ica",
+        "Incorrecto1": "Lima",
+        "Incorrecto2": "Áncash",
+        "Incorrecto3": "Arequipa",
+        "Imagen": "../../img/preguntas/nazca.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuántos días tiene una semana?",
+        "Respuesta": "7 días",
+        "Incorrecto1": "8 días",
+        "Incorrecto2": "9 días",
+        "Incorrecto3": "6 días",
+        "Imagen": "../../img/preguntas/semana.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "Si ayer fuer Martes ¿Qué día será dentro de 4 días?",
+        "Respuesta": "Sábado",
+        "Incorrecto1": "Domingo",
+        "Incorrecto2": "Lunes",
+        "Incorrecto3": "Martes",
+        "Imagen": "../../img/preguntas/dia.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuántos meses tienen 28 días?",
+        "Respuesta": "1 mes",
+        "Incorrecto1": "3 meses",
+        "Incorrecto2": "12 meses",
+        "Incorrecto3": "8 meses",
+        "Imagen": "../../img/preguntas/mes.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuál es el país con mayor territorio?",
+        "Respuesta": "Rusia",
+        "Incorrecto1": "Estados Unidos",
+        "Incorrecto2": "Brasil",
+        "Incorrecto3": "China",
+        "Imagen": "../../img/preguntas/mundo.jpg",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Parte del cuerpo que se encuentra en la cabeza?",
+        "Respuesta": "Ojos",
+        "Incorrecto1": "Espalda",
+        "Incorrecto2": "Hombros",
+        "Incorrecto3": "Abdomen",
+        "Imagen": "../../img/preguntas/cabeza.png",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Parte de la boca que tritura la comida?",
+        "Respuesta": "Dientes",
+        "Incorrecto1": "Lengua",
+        "Incorrecto2": "Labio",
+        "Incorrecto3": "Orejas",
+        "Imagen": "../../img/preguntas/boca.png",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Parte dura del brazo que esta en la punta de los dedos?",
+        "Respuesta": "Uñas",
+        "Incorrecto1": "Muñeca",
+        "Incorrecto2": "Hombro",
+        "Incorrecto3": "Codo",
+        "Imagen": "../../img/preguntas/manos.png",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿Cuantos dedos tenemos en cada pie?",
+        "Respuesta": "5",
+        "Incorrecto1": "6",
+        "Incorrecto2": "7",
+        "Incorrecto3": "8",
+        "Imagen": "../../img/preguntas/pies.png",
+        "object_fit": "cover"
+    },
+    {
+        "Categoria": "Preguntas y respuestas",
+        "Pregunta": "¿En qué año se dió la independencia del Perú?",
+        "Respuesta": "1821",
+        "Incorrecto1": "1852",
+        "Incorrecto2": "1920",
+        "Incorrecto3": "1840",
+        "Imagen": "../../img/preguntas/peru.jpg",
+        "object_fit": "cover"
+    }
+    
+]
