@@ -2,12 +2,12 @@
   "name": "nodejs-mysql-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon src/index.js",
-    "deve": "start msedge http://localhost:4000 & nodemon src/index.js",
-    "devf": "start firefox http://localhost:4000 & nodemon src/index.js"
+    "start": "node app",
+    "dev": "nodemon src/app.js",
+    "deve": "start msedge http://localhost:4000 & nodemon src/app.js",
+    "devf": "start firefox http://localhost:4000 & nodemon src/app.js"
   },
   "keywords": [],
   "author": "",
