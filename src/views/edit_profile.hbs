@@ -27,7 +27,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10 col-md-4 form-group mb-4">
                                 <label for="name">Nombre de usuario:</label>
-                                <input type="text" class="form-control py-2" id="last_one_name"
+                                <input type="text" class="form-control py-2" id="username"
                                     value={{user.username}}>
                             </div>
 
@@ -124,10 +124,10 @@
         }
 
         const id = {{ user.id }};
-        const username = '{{user.username}}';
+
         const user = {
             'id': id,
-            'username': username,
+            'username': document.getElementById('username').value,
             'name': document.getElementById('last_one_name').value,
             'surname': document.getElementById('last_two_name').value,
             'lvl': document.getElementById('lvl').value,
