@@ -30,6 +30,7 @@ passport.use('local.signup', new LocalStrategy({ //colocamos lo que queremos rec
     passwordField: 'password',
     passReqToCallback: true
 }, async (req, username, password, done) => {
+    if(!req.email){ return;};
     const { fullname } = req.body; // traemos al fullname para cada usuario
     const newUser = {//definimos a un nuevo usuario
         username: req.body.username,
