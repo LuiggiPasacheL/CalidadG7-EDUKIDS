@@ -6,6 +6,7 @@ const pool = require('../database'); //cualquier modificacion a la base de datos
 
 router.use('/preguntas', require('./preguntas.js'));
 router.use('/rompecabezas', require('./rompecabezas.js'));
+router.use('/operaciones', require('./operaciones.js'));
 
 router.post('/correcto', async (req, res, next) => {
     if (req.user.exp < 100) {
