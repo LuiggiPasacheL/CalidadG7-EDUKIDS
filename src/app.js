@@ -49,6 +49,11 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use('*', (req, res, next) => {
+  res.send('Pagina no encontrada: ERROR 404 ');
+  next();
+})
+
 //Rutas: 
 app.use(require('./routes/index.js'));
 app.use(require('./routes/authentication.js'));
