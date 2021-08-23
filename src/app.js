@@ -49,6 +49,7 @@ app.use((req, res, next) => {
   next();
 });
 
+
 //Rutas: 
 app.use(require('./routes/index.js'));
 app.use(require('./routes/authentication.js'));
@@ -57,6 +58,11 @@ app.use('/videos', require('./routes/videos.js'));
 
 //Public
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('*', (req, res, next) => {
+  // res.render('agregar pagina para error 404.hbs'); 
+  res.send('Pagina no encontrada: ERROR 404'); //si agregan pagina borrar esta linea <-
+});
 
 //Iniciar el server
 app.listen(app.get('port'), () => {
