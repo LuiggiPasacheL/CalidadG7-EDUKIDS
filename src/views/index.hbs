@@ -88,16 +88,15 @@
                                 
         <div class="container-fluid">
                 <div class="container">
-                                <div class="row">
-                                        <div class="col-12 col-md-5" id="barra_medicion">
-                                                <div>
-                                                        <p class="nombre_usuario"
-                                                                style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                                                                [ {{user.username}} ]</p>
-                                                </div>
-                                                <head>
-                                                        <meta charset="UTF-8">
-                                                                <title>Scroll ProgressBar</title>
+                        <div class="row">
+                                <div class="col-12 col-md-5" id="barra_medicion">
+                                        <div>
+                                                <p class="nombre_usuario" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> [ {{user.username}} ]</p>
+                                        </div>
+
+                                        <head>
+                                                <meta charset="UTF-8">
+                                                        <title>Scroll ProgressBar</title>
                                                         <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maxinum-scale=1.0, minimum-scale=1.0">
                                                         <style>
                                                                 .container-progressbar{
@@ -114,57 +113,52 @@
                                                                 background: #00ff15;
                                                                 border-radius: 20px;
                                                                 }
-                                                        </style>
-                                                </head>
-                                                <body>
-                                                        <div class="container-progessbar">
-                                                                <div class="progressbar"></div>
-                                                        </div>
+                                                </style>
+                                        </head>
+                                                
+                                        <body>
+                                                <div class="container-progessbar">
+                                                        <div class="progressbar"></div>
+                                                </div>
                                                         <script>
                                                                 let progressbar = document.querySelector('.progressbar');
                                                                 progressbar.style.width = {{user.exp}} + '%'; //Aqui puedes poner el nivel de la barra, del 1 al 100
                                                         </script>
-                                                </body>
-                                                <div class="barra_base">
-                                                        <img src="img/fondos/boton_actividad.png" alt="preguntas">
-                                                        <p class="barra_texto">PROGRESO</p>
-                                                </div>
-
+                                        </body>
+                                        
+                                        <div class="barra_base">
+                                                <img src="img/fondos/boton_actividad.png" alt="preguntas">
+                                                <p class="barra_texto">PROGRESO</p>
                                         </div>
-                                        <div class="col-12 col-md-5" id="fondo_picchu">
-                                                <img src={{user.img}} alt="Jugando_cultura" style="margin-top: 40px;">
-                                                <div class="videos_fondo">
-                                                        <img src="img/fondos/rectangulo_picchu.png" alt="preguntas">
-                                                        <p class="picchu_texto">Nivel: {{user.lvl}}</p>
-                                                        <a href="http://localhost:4000/avatar">
-                                                                <button type="button" class="btn btn-danger"
-                                                                        id="cambiar_avatar"
-                                                                        style="font-size: 20px;">CAMBIAR AVATAR</button>
-                                                        </a>
-                                                </div>
+
+                                </div>
+                                        
+                                <div class="col-12 col-md-5" id="fondo_picchu">
+                                        <img src={{user.img}} alt="Jugando_cultura" style="margin-top: 40px;">
+                                                
+                                        <div class="videos_fondo">
+                                                <img src="img/fondos/rectangulo_picchu.png" alt="preguntas">
+                                                <p class="picchu_texto">Nivel: {{user.lvl}}</p>
+                                                <a href="http://localhost:4000/avatar">
+                                                        <button type="button" class="btn btn-danger" id="cambiar_avatar" style="font-size: 20px;">CAMBIAR AVATAR</button>
+                                                </a>
                                         </div>
                                 </div>
-
                         </div>
+
                 </div>
         </div>
 
         <div class="container-fluid">
                 <div class="container">
-                        <div style="min-height: 35vh;
-                                                font-family: Ropa Sans;
-                                                font-style: normal;
-                                                font-weight: normal;
-                                                text-align: center;
-                                                color: #FFFFFF;
-                                                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                        <div style="min-height: 35vh; font-family: Ropa Sans; font-style: normal; font-weight: normal; text-align: center; color: #FFFFFF; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
                                 <div class="col-12">
                                         <!--<h2 style="margin-top: 40px; color:black">
                                                 <u>CALIFÍQUENOS</u>
                                         </h2>-->
                                 </div>
 
-                                <div class="row">
+                                <!--<div class="row">
                                         <form class="was-validated">
                                                 <div>
                                                         <label for="validationTextarea" style="font-size: 30px; color:#000000"> <u> Envíanos un mensaje</u></label>
@@ -172,7 +166,7 @@
                                                         <button type="button" class="btn btn-primary" id="btn-sending" style="margin-bottom: 20px; background:#1a1a1a; border:none;">Enviar</button>
                                                         <div class="invalid-feedback">.</div>
                                                 </div>
-                                        </form>
+                                        </form>-->
                                         <!--<div class="col-12 col-md-6 offset-3" id="preguntas" style="margin-top: 35px;">
                                                 <img src="img/fondos/estrella_calif.png" alt="preguntas">
                                                 <img src="img/fondos/estrella_calif.png" alt="preguntas">
