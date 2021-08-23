@@ -150,3 +150,22 @@ footer h2{
 #validationTextarea{
     height: 150px;
 }
+
+#btn_videos{
+    background-color: rgb(48, 168, 168);
+    border: none;
+    padding: 20px 100px 20px 100px;
+    border-radius: 20px;
+}
+
+.juego_num{
+    width: 19em;
+    height: 19em;
+}
+
+#btn_num{
+    background-color: rgb(48, 168, 168);
+    border: none;
+    padding: 25px 60px 30px 60px;
+    border-radius: 20px;
+}
