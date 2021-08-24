@@ -1,9 +1,9 @@
 /*Hoja de estilos*/
-#entorno {
+entorno {
 	display: block;
 	margin: 0 auto;
 }
 
-#fondo {
+fondo {
 	opacity: 0.3;
 }
