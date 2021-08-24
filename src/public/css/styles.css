@@ -23,7 +23,7 @@ main{
 .perfil{
     background-color: #3b3b3b;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     border-radius: 20px;
 }
 
@@ -70,7 +70,7 @@ footer h2{
 
 .videos_texto{
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 40%;
     font-size: 25px;
     color: #FFFF;
@@ -87,7 +87,7 @@ footer h2{
 
 .rompecabezas_texto{
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 20%;
     font-size: 25px;
     color: white;
@@ -95,8 +95,8 @@ footer h2{
 
 .nombre_usuario{
     position: relative;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     font-size: 30px;
     color: black;
     margin: 50px 0px 0px 0px;
@@ -104,24 +104,24 @@ footer h2{
 
 .barra_texto{
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 32%;
     font-size: 30px;
     color: #FFFF;
-    margin: 0px 0px 0px 0px;
+    margin: 0 0 0 0;
 }
 
 #barra_medicion{
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0 0 0;
 }
 
 .barra_base{
     position: relative;
-    margin: 0px 0px 0px 0px;
+    margin: 0 0 0 0;
 }
 
 #fondo_picchu{
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0 0 0;
 }
 
 .picchu_texto{
