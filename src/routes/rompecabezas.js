@@ -7,20 +7,20 @@ router.get('/instrucciones',(req,res)=>{
     res.render('juegos/rompecabezas/instruccion_rompecabezas');
 });
 
-router.get('/catalogo',(req,res,next)=>{
+router.get('/catalogo',(req,res)=>{
     res.render('juegos/rompecabezas/catalogo');
 });
 
 
-router.get('/leon', (req, res, next) =>{
+router.get('/leon', (req, res) =>{
     res.render('juegos/rompecabezas/elsa1');
 });
 
-router.get('/elefante', (req, res, next) =>{
+router.get('/elefante', (req, res) =>{
     res.render('juegos/rompecabezas/elsa2');
 });
 
-router.get('pikachu', (req, res, next) =>{
+router.get('pikachu', (req, res) =>{
     res.render('juegos/rompecabezas/pikachu');
 });
 

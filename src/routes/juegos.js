@@ -8,7 +8,7 @@ router.use('/preguntas', require('./preguntas.js'));
 router.use('/rompecabezas', require('./rompecabezas.js'));
 router.use('/operaciones', require('./operaciones.js'));
 
-router.post('/correcto', async (req, res, next) => {
+router.post('/correcto', async (req, res) => {
     if (req.user.exp < 100) {
         req.user.exp += 25;
     } else {
@@ -19,7 +19,7 @@ router.post('/correcto', async (req, res, next) => {
     res.redirect('/juegos/preguntas/generalidades');
 })
 
-router.post('/cambiarAvatar',async (req,res,next)=>{
+router.post('/cambiarAvatar',async (req,res)=>{
     let img = req.body;
     console.log(img);
     await pool.query('UPDATE users SET img = ? WHERE id = ?',[img.img,img.id]);

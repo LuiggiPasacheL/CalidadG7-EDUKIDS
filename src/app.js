@@ -59,7 +59,7 @@ app.use('/videos', require('./routes/videos.js'));
 //Public
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('*', (req, res, next) => {
+app.get('*', (req, res) => {
   // res.render('agregar pagina para error 404.hbs'); 
   res.send('Pagina no encontrada: ERROR 404'); //si agregan pagina borrar esta linea <-
 });

@@ -5,7 +5,7 @@ router.get('/',(req,res)=>{
     res.render('index');
 });
 
-router.get('/avatar',(req,res,next)=>{
+router.get('/avatar',(req,res)=>{
     res.render('layouts/avatar');
 });
 

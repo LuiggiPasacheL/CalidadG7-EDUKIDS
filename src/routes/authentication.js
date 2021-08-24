@@ -29,11 +29,11 @@ router.post('/signin', passport.authenticate('local.signin', {
     failureFlash: true
 }));
 
-router.get('/edit-profile', (req, res, next) => {
+router.get('/edit-profile', (req, res) => {
     res.render('edit_profile');
 });
 
-router.post('/edit-profile', async (req, res, next) => {
+router.post('/edit-profile', async (req, res) => {
     let user = req.body;
     console.log(user);
     if (user.password != user.passwordOld) {
