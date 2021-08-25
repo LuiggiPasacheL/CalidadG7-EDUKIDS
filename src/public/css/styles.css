@@ -55,11 +55,11 @@ footer h2{
     text-transform: uppercase;
 }
 
-jugando_cultura{
+#jugando_cultura{
     margin-right: 70px;
 }
 
-preguntas{
+#preguntas{
     margin-right: 70px;
 }
 
@@ -111,7 +111,7 @@ preguntas{
     margin: 0 0 0 0;
 }
 
-barra_medicion{
+#barra_medicion{
     margin: 100px 0 0 0;
 }
 
@@ -120,7 +120,7 @@ barra_medicion{
     margin: 0 0 0 0;
 }
 
-fondo_picchu{
+#fondo_picchu{
     margin: 100px 0 0 0;
 }
 
@@ -132,7 +132,7 @@ fondo_picchu{
     color: #FFFF;
 }
 
-cambiar_avatar{
+#cambiar_avatar{
     padding: 20px 120px 20px 120px;
     border-radius: 20px;
 }
@@ -147,11 +147,11 @@ btn-sending{
     border-radius: 15px;
 }
 
-validationTextarea{
+#validationTextarea{
     height: 150px;
 }
 
-btn_videos{
+#btn_videos{
     background-color: rgb(48, 168, 168);
     border: none;
     padding: 20px 100px 20px 100px;
@@ -163,7 +163,7 @@ btn_videos{
     height: 19em;
 }
 
-btn_num{
+#btn_num{
     background-color: rgb(48, 168, 168);
     border: none;
     padding: 25px 60px 30px 60px;

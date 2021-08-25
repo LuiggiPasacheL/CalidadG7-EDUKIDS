@@ -24,6 +24,14 @@ router.get('pikachu', (req, res) =>{
     res.render('juegos/rompecabezas/pikachu');
 });
 
+router.get('/jirafa', (req, res) =>{
+    res.render('juegos/rompecabezas/jirafa');
+});
+
+router.get('/tortuga', (req, res) =>{
+    res.render('juegos/rompecabezas/tortuga');
+});
+
 
 router.get('/elsa1',(req,res)=>{
     res.render('juegos/rompecabezas/elsa1');
