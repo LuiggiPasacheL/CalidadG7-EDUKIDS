@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Suma</title>
@@ -6,9 +5,23 @@
         
     </head>
     <body>
-        <center>
-        <h1>Felicidades ganaste el juego </h1>
-        <img src="img/Sin-título-3.png"/>
-    </center>
+        <style>
+            body{
+            background-image: url("/img/fondos/FondoAlternativo2.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            }
+        </style>
+        <div class="row">      
+            <div class="offset-4 col-4 py-4">
+                <h1>Felicidades ganaste el juego </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-4 col-6">
+                <img width="400em;" height="350em;" src="/img/Numeros/Sin-título-9.png"/>
+            </div>
+        </div>
+        <button type="button" onclick="location.href='/'" class="btn btn-danger" id="instruccion_pregunta" style="font-size: 35px; margin: 20px 0px 20px 560px;">Volver a inicio</button>
     </body>
 </html>
