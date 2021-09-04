@@ -84,6 +84,9 @@ function testing(test=false) {
 		win.play();
 		alert("!Felicidades armaste correctamente el rompecabezas!");
 		location.href="/juegos/rompecabezas/pikachu";
+		fetch('/juegos/correcto', {
+			method: 'POST',
+		});
 	}
 }
 

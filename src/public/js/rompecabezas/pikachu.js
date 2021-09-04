@@ -91,6 +91,9 @@ function testing(test=false) {
 		win.play();
 		alert("!Felicidades armaste correctamente el rompecabezas!");
 		location.href="/juegos/rompecabezas/elsa1";
+		fetch('/juegos/correcto', {
+			method: 'POST',
+		});
 	}
 }
 

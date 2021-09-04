@@ -16,8 +16,15 @@
     </center>
     <center>
         <img src="img/Sin-título-3.png" width="150" height="150"/>
-        <a href="Ganador.html"> <img src="img/Sin-título-2.png" width="150" height="150"/></a>
+        <a href="Ganador.html" onclick='esCorrecto()'> <img src="img/Sin-título-2.png" width="150" height="150"/></a>
         <img src="img/Sin-título-5.png" width="150" height="150"/>
+        <script>
+            function esCorrecto(){
+                fetch('/juegos/correcto', {
+                  method: 'POST',
+                });
+            }
+        </script>
     </center>
     </body>
 </html>

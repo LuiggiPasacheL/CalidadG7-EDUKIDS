@@ -90,6 +90,9 @@ function testing(test=false) {
 	if(test || bien_ubicada == 9){
 		win.play();
 		alert("!Felicidades armaste correctamente el rompecabezas!");
+		fetch('/juegos/correcto', {
+			method: 'POST',
+		});
 	}
 }
 

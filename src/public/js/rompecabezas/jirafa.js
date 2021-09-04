@@ -89,6 +89,9 @@ function testing() {
 	}
 	if(bien_ubicada == 9){
 		win.play();
+		fetch('/juegos/correcto', {
+			method: 'POST',
+		});
 	}
 }
 

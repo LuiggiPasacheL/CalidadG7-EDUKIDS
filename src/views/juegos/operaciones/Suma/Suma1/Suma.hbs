@@ -26,8 +26,15 @@
     </center>
     <center style="margin: 40px 0px 0px 0px;">
         <img src="/img/Numeros/Sin-título-3.png" width="150" height="150"/>
-        <a href="/juegos/operaciones/Suma/1/ganador"> <img src="/img/Numeros/Sin-título-6.png" width="150" height="150"/></a>
+        <a href="/juegos/operaciones/Suma/1/ganador" onclick="esCorrecto()"> <img src="/img/Numeros/Sin-título-6.png" width="150" height="150"/></a>
         <img src="/img/Numeros/Sin-título-9.png" width="150" height="150"/>
+        <script>
+            function esCorrecto(){
+                fetch('/juegos/correcto', {
+                  method: 'POST',
+                });
+            }
+        </script>
     </center>
     </body>
 </html>
